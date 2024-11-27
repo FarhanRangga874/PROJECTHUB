@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #222222;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    background-color: #000000;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    max-width: 700px;
+    width: 90%;
+}
+
+
+.left-section {
+    padding: 40px 20px;
+    background-color: #121212;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.left-section h1 {
+    color: #DA0037;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.avatar-icon {
+    margin: 20px 0;
+    width: 60px;
+    height: 60px;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #000;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.left-section p {
+    font-size: 13px;
+    font-weight: 300;
+    color: white;
+    margin-top: 10px;
+    line-height: 1.5;
+    font-family: "Sometype Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;  
+}
+
+
+.right-section {
+    padding: 40px 20px;
+    background-color: #181818;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-section h2 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #aaaaaa;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #252525;
+    color: #ffffff;
+    font-size: 14px;
+    outline: none;
+}
+
+.form-group input::placeholder {
+    color: #888888;
+    font-style: italic;
+}
+
+.register-btn {
+    width: 100%;
+    padding: 12px;
+    background-color:#DA0037;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}

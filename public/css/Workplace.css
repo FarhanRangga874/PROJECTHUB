@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;display=swap');
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #171717;
+    display: flex;
+    flex-direction: row;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Sidebar Styles */
+.Sidebar {
+    display: block;
+    height: 100vh;
+    min-width:300px;
+    background-color: #222222;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+.Sidebar img {
+    width: 150px;
+    margin: 20px 0px 0px 20px;
+}
+
+.user-name p{
+    color: white;
+    background-color: #DA0037;
+    height: 50px;
+    border-radius: 8px;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    font-size: 20px;
+    margin: 0px 20px;
+    gap: 20px;
+    padding: 0px 20px;
+}
+
+.user-name img{
+    width: 20px;
+    margin: 0px;
+}
+
+.Sidebar .project {
+    margin: 20px;
+    color: white;
+
+}
+
+.project {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.Sidebar .project h2 {
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    border-bottom: 1px solid white;
+    margin-bottom: 20px;
+}
+
+.Sidebar .daftar {
+    font-size: 15px;
+}
+
+.Sidebar .daftar a {
+    color: white;
+    display: block;
+    padding: 8px 0px 8px 8px;
+    font-weight: 600;
+}
+
+.Sidebar .daftar a:hover {
+    background-color: #333;
+    border-radius: 5px;
+}
+
+
+.Sidebar .add-project form input,
+.Sidebar .add-project form button {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #222222;
+    color: white;
+}
+
+.Sidebar .add-project form button {
+    background-color: #DA0037;
+    border: none;
+    color: white;
+}
+
+.Sidebar .add-project form button:hover {
+    background-color: #BF002D;
+}
+
+/* Workplace Styles */
+.Workplace {
+    margin-top: 20px;
+    width: 60vw;
+    padding: 20px;
+    color: white;
+}
+
+.greating h2{
+    font-size: 20px;
+}
+.greating p {
+    color: white;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.File {
+    background-color: #222222;
+    width: 100%;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px;
+    margin-top: 20px;
+}
+
+.header_file {
+    display: flex;
+    align-items: center;
+    background-color: #DA0037;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.header_file img {
+    max-height: 50px;
+    margin-right: 20px;
+}
+
+.keterangan h2 {
+    margin: 0;
+}
+
+.keterangan p {
+    font-size: 12px;
+}
+
+.Daftar_file {
+    margin-top: 20px;
+}
+
+.file-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.file-item .item img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.file-item .item div {
+    flex: 1;
+}
+
+.file-item .file_setting {
+    display: none;
+    align-items: flex-start;
+}
+
+.file-setting{
+    display: flex;
+}
+
+.file_setting img{
+    background-color: #DA0037;
+    width: auto;
+    height: 45px;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.file_setting img:hover{
+    cursor: pointer;
+}
+
+.file_setting input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #121212;
+    color: white;
+    width: 70%;
+    font-size: 16px;
+}
+
+.file_setting input[type="text"]:focus {
+    border-color: white; 
+    outline: none;
+}
+
+.set_del{
+    background: none;
+    border-style: none;
+}
+
+
+.set_rename{
+    border-radius: 5px;
+    color: white;
+    background-color: #DA0037;
+    border: none;
+    height: 45px;
+    padding: 5px;
+    font-weight: 600;
+}
+
+.set_rename:hover{
+    cursor: pointer;        
+}
+
+.file-item:hover .file_setting {
+    display: flex;
+    gap: 10px;
+}
+
+.file-setting form,
+.file-setting a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DA0037;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+}
+
+.file-setting form button,
+.file-setting a img {
+    width: 20px;
+}
+
+.file-item:hover .file_setting a,
+.file-item:hover .file_setting form {
+    cursor: pointer;
+}
+
+/* Add file form */
+.addfile {
+    background-color: #222222;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.addfile input[type="file"] {
+    background-color: #121212;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+}
+
+.addfile button {
+    background-color: #DA0037;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.addfile button:hover {
+    background-color: #BF002D;
+}
+
+.project-options {
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+    justify-content: space-evenly;
+
+}
+
+.edit-btn, .delete-btn {
+    background-color: #DA0037;
+    border-radius: 5px;
+    width: 120px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 20px;
+    
+}
+
+.delete-btn {
+    color: white;
+}
+
+.edit-btn:hover, .delete-btn:hover {
+    text-decoration: underline;
+}
+
+
+.todo{
+    padding: 0px 20px 0px 0px;
+}
+
+.Todo-list {
+    background-color: #222222;
+    width: 100%;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px;
+    margin-top: 90px;
+}
+
+.Todo-list h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Todo-list form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.Todo-list input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #121212;
+    color: white;
+    width: 70%;
+    font-size: 16px;
+}
+
+.Todo-list button {
+    padding: 10px 20px;
+    background-color: #DA0037;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.Todo-list button:hover {
+    background-color: #BF002D;
+}
+
+.Todo-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.Todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333333;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.Todo-list li:hover {
+    background-color: #444444;
+}
+
+.Todo-list li span {
+    flex-grow: 1;
+    color: white;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.Todo-list li input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #DA0037;
+}
+
+.Todo-list .btn-danger {
+    background-color: #DA0037;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.Todo-list .btn-danger:hover {
+    background-color: #BF002D;
+}
+
+.header_todo{
+    background-color: #DA0037;
+    display: flex;
+}
+
+.header_todo {
+    display: flex;
+    align-items: center;
+    background-color: #DA0037;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.header_todo img {
+    max-height: 55px;
+    margin-right: 20px;
+}

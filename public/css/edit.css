@@ -1,0 +1,86 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #171717;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Container for form */
+.container {
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #222222;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: #DA0037;
+    margin-bottom: 10px;
+}
+
+/* Form Group styles */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Label styling */
+label {
+    font-weight: bold;
+    color: #DA0037;
+    margin-bottom: 10px;
+}
+
+/* Input and textarea styles */
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+.submit-btn {
+    width: 100%;
+    background-color: #DA0037;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #b0002b;
+}
+
+/* Responsive design for small screens */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    .submit-btn {
+        width: 100%;
+    }
+}
