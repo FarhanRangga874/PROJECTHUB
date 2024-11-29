@@ -11,8 +11,8 @@ class TodoController extends Controller
     public function index($projectId)
     {
         $project = Project::findOrFail($projectId);
-        $todos = $project->todos; // Ambil semua to-do yang terkait dengan proyek
-        return view('workplace', compact('project', 'todos')); // Ganti ke workplace.blade.php
+        $todos = $project->todos; 
+        return view('workplace', compact('project', 'todos')); 
     }
 
     public function store(Request $request, $projectId)
@@ -41,7 +41,7 @@ class TodoController extends Controller
             'completed' => $request->has('completed') ? true : false,
         ]);
 
-        return redirect()->route('workplace', $projectId) // Ganti ke workplace
+        return redirect()->route('workplace', $projectId)
                          ->with('success', 'Status To-Do berhasil diperbarui.');
     }
 
@@ -50,7 +50,7 @@ class TodoController extends Controller
         $todo = Todo::findOrFail($todoId);
         $todo->delete();
 
-        return redirect()->route('workplace', $projectId) // Ganti ke workplace
+        return redirect()->route('workplace', $projectId) 
                          ->with('success', 'To-Do berhasil dihapus.');
     }
 }
